@@ -1,0 +1,15 @@
+#login,#register{
+    -fx-background-color:  linear-gradient(to bottom right,magenta, darkviolet);
+    -fx-background-radius: 20;
+    -fx-border-color:dodgerblue;
+    -fx-border-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+#login:hover ,#register:hover{
+    -fx-background-color: darkviolet; /* Green */
+    -fx-border-color: dodgerblue;
+    -fx-border-radius: 20;
+
+}
+

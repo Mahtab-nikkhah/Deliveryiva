@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import com.example.phase2.view.LoginMenu?>
+
+<AnchorPane fx:controller="com.example.phase2.controller.MainMenuController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to bottom right,dodgerblue,silver );" stylesheets="@RegisterMenu.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="240.0" layoutY="168.0" prefHeight="43.0" prefWidth="210.0" promptText="Password" style="-fx-background-color: linear-gradient(to bottom right,magenta, darkviolet); -fx-background-radius: 20; -fx-font-size: 20; -fx-border-color: blue; -fx-border-radius: 20;" />
+      <TextField fx:id="securityAnswer" alignment="CENTER" layoutX="240.0" layoutY="298.0" prefHeight="43.0" prefWidth="210.0" promptText="Security Answer" style="-fx-background-color: linear-gradient(to bottom right,magenta, darkviolet); -fx-background-radius: 20; -fx-font-size: 20; -fx-border-color: blue; -fx-border-radius: 20;" />
+      <TextField fx:id="username" alignment="CENTER" layoutX="240.0" layoutY="103.0" prefHeight="43.0" prefWidth="210.0" promptText="Username" style="-fx-background-color: linear-gradient(to bottom right,magenta, darkviolet); -fx-background-radius: 20; -fx-font-size: 20; -fx-border-color: blue; -fx-border-radius: 20;" />
+      <TextField fx:id="securityQuestion" alignment="CENTER" layoutX="240.0" layoutY="234.0" prefHeight="43.0" prefWidth="210.0" promptText="Security Question" style="-fx-background-color: linear-gradient(to bottom right,magenta, darkviolet); -fx-background-radius: 20; -fx-font-size: 20; -fx-border-color: blue; -fx-border-radius: 20;" />
+      <Button onMouseClicked="#role1" onMouseExited="#unselected1" onMouseEntered="#selected1" fx:id="userButton" layoutX="68.0" layoutY="289.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="115.0" style="-fx-font-size: 20; -fx-background-color: linear-gradient(to bottom right,magenta, aqua); -fx-background-radius: 20; -fx-text-fill: white;" styleClass="button" text="User" />
+      <Button onMouseClicked="#role3" onMouseExited="#unselected3" onMouseEntered="#selected3" fx:id="deliveryButton" layoutX="68.0" layoutY="218.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="115.0" style="-fx-font-size: 20; -fx-background-color: linear-gradient(to bottom right,magenta, aqua); -fx-background-radius: 20; -fx-text-fill: white;" styleClass="button" text="Delivery" />
+      <Button onMouseClicked="#role2" onMouseExited="#unselected2" onMouseEntered="#selected2" fx:id="adminButton" layoutX="68.0" layoutY="149.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="115.0" style="-fx-font-size: 20; -fx-background-color: linear-gradient(to bottom right,magenta, aqua); -fx-background-radius: 20; -fx-text-fill: white;" styleClass="button" text="Admin" />
+
+      <Button onMouseClicked="#submit" onMouseExited="#unselected4" onMouseEntered="#selected4" fx:id="submit" layoutX="68.0" layoutY="358.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="115.0" style="-fx-font-size: 20; -fx-background-color: linear-gradient(to bottom right,magenta, aqua); -fx-background-radius: 20; -fx-text-fill: white;" styleClass="button" text="Submit" />
+
+      <Label layoutX="52.0" layoutY="103.0" prefHeight="30.0" prefWidth="210.0" style="-fx-font-size: 20;" text="Choose your role:" textFill="WHITE" />
+   </children>
+</AnchorPane>
